@@ -27,7 +27,7 @@ function App() {
         body: JSON.stringify({ prompt }),
       };
   
-      const res = await fetch("https://custom-chat-gpt-server.onrender.com/ask", requestOptions);
+      const res = await fetch("/ask", requestOptions);
   
       if (!res.ok) {
         throw new Error("Something went wrong");
